@@ -1,6 +1,8 @@
-      $(d>
+<!doctype html>
+<head>
 	<link rel="stylesheet" type="text/css" href="styles.css">
-	<script src="scripts.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
@@ -10,28 +12,28 @@
 	<!--buttons to switch between all the languages-->
 	<!-- on click of the button, it takes what is in the written field and translates it to that language-->
 	
-	<button id="Australian">Australian</button>
-	<button id="Boston">Boston</button>
-	<button id="Braille">Braille</button>
-	<button id="Brooklyn">Brooklyn</button>
-	<button id="Emoji">Emoji</button>
-	<button id="Ermahgerd">Ermahgerd</button>
-	<button id="Fudd">Fudd</button>	
-	<button id="Gungan">Gungan</button>
-	<button id="Huttese">Huttese</button>
-	<button id="Klingon">Klingon</button>
-	<button id="L33T">L33T</button>
-	<button id="Mandalorian">Mandalorian</button>
-	<button id="Morse">Morse</button>
-	<button id="Numbers">Numbers</button>
-	<button id="OldEnglish">Old English</button>
-	<button id="Pirate">Pirate</button>
-	<button id="PigLatin">Pig Latin</button>
-	<button id="Shakespeare">Shakespeare</button>
-	<button id="Sith">Sith</button>
-	<button id="Valyrian">Valyrian</button>
-	<button id="Vulcan">Vulcan</button>
-	<button id="Yoda">Yoda</button>
+	<button id="Australian" onclick = "setButton('australian')">Australian</button>
+	<button id="Boston" onclick = "setButton('boston')">Boston</button>
+	<button id="Braille" onclick = "setButton('braille')">Braille</button>
+	<button id="Brooklyn" onclick = "setButton('brooklyn')">Brooklyn</button>
+	<button id="Emoji" onclick = "setButton('emoji')">Emoji</button>
+	<button id="Ermahgerd" onclick = "setButton('ermahgerd')">Ermahgerd</button>
+	<button id="Fudd" onclick = "setButton('fudd')">Fudd</button>	
+	<button id="Gungan" onclick = "setButton('gungan')">Gungan</button>
+	<button id="Huttese" onclick = "setButton('huttese')">Huttese</button>
+	<button id="Klingon" onclick = "setButton('klingon')">Klingon</button>
+	<button id="L33T" onclick = "setButton('leetspeak')">L33T</button>
+	<button id="Mandalorian" onclick = "setButton('mandalorian')">Mandalorian</button>
+	<button id="Morse" onclick = "setButton('morse')">Morse</button>
+	<button id="Numbers" onclick = "setButton('numbers')">Numbers</button>
+	<button id="OldEnglish" onclick = "setButton('oldenglish')">Old English</button>
+	<button id="Pirate" onclick = "setButton('pirate')">Pirate</button>
+	<button id="PigLatin" onclick = "setButton('piglatin')">Pig Latin</button>
+	<button id="Shakespeare" onclick = "setButton('shakespeare')">Shakespeare</button>
+	<button id="Sith" onclick = "setButton('sith')">Sith</button>
+	<button id="Valyrian" onclick = "setButton('valyrian')">Valyrian</button>
+	<button id="Vulcan" onclick = "setButton('vulcan')">Vulcan</button>
+	<button id="Yoda" onclick = "setButton('yoda')">Yoda</button>
 
 	<form>
 		<input type="text" id="inputField">
