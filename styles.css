@@ -1,0 +1,15 @@
+body{
+	text-align: center;
+	font-weight: bold;
+	font-color: black;
+	font-size: 18pt;
+}
+
+#inputField, #translatedField{
+	font-weight: bold;
+	/*these two fields need to look identical, so their css is together*/
+}
+
+button{
+	color: lightblue;
+}
