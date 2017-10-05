@@ -1,32 +1,18 @@
-
-var buttonSelected = 'australian'; //default. null is a bad value to set it to
-
-var setButton = function(selected){
-	buttonSelected = selected;
-	//console.log("selected: "+ selected)
-	console.log("button: "+ buttonSelected)
-}
-
-$(document).ready(function(){ // im pretty sure there's a way to pass a parameter from the html to the js function so we can differentiate what button is selected right now
+$(document).ready(function(){
 	$("#inputField").keyup(function(e){
 		console.log("input: " + $("#inputField").val());
 		e.preventDefault();
-		var myurl = "http://api.funtranslations.com/translate/" + buttonSelected + ".json?text=" +$("#inputField").val();
+		var myurl = "http://api.funtranslations.com/translate/ermahgerd.json?api_key=9mxYi8zQtGhYZVvFXRLYPweF&text=" +$("#inputField").val();
+		//9mxYi8zQtGhYZVvFXRLYPweF 
+		// API KEY ^^
 		$.ajax({
 			url: myurl,
 			dataType: "json",
 			success: function(json){
-				console.log("data: " + json);
-
-				$.each(json,function(key, value){
-					console.log("key " +key+ " value "+value)
-					$.each(value, function(key,value){
-						console.log("key " +key+ " value "+value)
-					})
-				})
-				//var everything = contents[translation]; //not exactly sure that gets it
-				var everything ="";
-				$("translatedField").html(everything);
+				//console.log("data: " + json);
+				var trans= json.contents.translated; //not exactly sure that gets it
+				//put trans in the paren vv
+				$("#translatedField").val();
 			}
 		})
 	})
