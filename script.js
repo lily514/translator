@@ -11,8 +11,7 @@ $(document).ready(function(){
 			success: function(json){
 				//console.log("data: " + json);
 				var trans= json.contents.translated; //not exactly sure that gets it
-				//put trans in the paren vv
-				$("#translatedField").val();
+				$("#translatedField").val(trans);
 			}
 		})
 	})
